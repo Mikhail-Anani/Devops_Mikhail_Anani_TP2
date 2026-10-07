@@ -1,0 +1,13 @@
+id,species,height_m,circumference_cm,district,planted_year
+1,Plane tree,24.5,310,Paris 5,1890
+2,Plane tree,21.0,260,Paris 12,1925
+3,Horse chestnut,18.2,240,Paris 7,1910
+4,Horse chestnut,15.8,190,Paris 16,1952
+5,Linden,14.0,150,Paris 11,1968
+6,Linden,12.5,135,Paris 20,1975
+7,Japanese pagoda tree,13.1,170,Paris 3,1960
+8,Maple,11.4,120,Paris 14,1982
+9,Maple,9.8,95,Paris 18,1995
+10,Ginkgo,16.3,180,Paris 6,1938
+11,Ginkgo,8.7,70,Paris 13,2005
+12,Oak,19.6,280,Paris 15,1901

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+    <!-- Bypass proxy stripping from code-server -->
+    <link href="./style.css" rel="stylesheet"> 
+    <title>Guestbook</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Guestbook</h1>
+    </div>
+
+    <div id="guestbook-entries">
+      <p>⚠️ No database connection... ⚠️</p>
+    </div>
+
+    <div>
+      <form id="guestbook-form">
+        <input autocomplete="off" id="guestbook-entry-content" type="text">
+        <a href="#" id="guestbook-submit">Submit</a>
+      </form>
+    </div>
+
+    <div>
+      <p><h2 id="guestbook-host-address"></h2></p>
+      <p><a href="./env">/env</a>
+      <a href="./info">/info</a></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
