@@ -58,7 +58,7 @@ Quand vous êtes satisfait du résultat, vous pouvez lancer l'application avec `
 
 ### Vérifications
 
-- [ ] Je peux exécuter l'application localement et voir l'interface web.
+- [X] Je peux exécuter l'application localement et voir l'interface web.
 - [ ] J'ai implémenté un petit changement dans l'application et elle fonctionne toujours
 
 ### Construire l'image de conteneur (Docker)
@@ -133,9 +133,9 @@ L'image que vous avez construite jusqu'à présent est assez grosse car elle con
 
 ### Vérifications
 
-- [ ] Je peux construire une image localement
-- [ ] Je peux exécuter le conteneur localement
-- [ ] La taille de l'image est inférieure à 20MB
+- [X] Je peux construire une image localement
+- [X] Je peux exécuter le conteneur localement
+- [X] La taille de l'image est inférieure à 20MB
 
 ### Exécuter localement avec docker compose
 
@@ -166,8 +166,8 @@ Il y a un [article _pour commencer_](https://docs.docker.com/compose/gettingstar
 
 ### Vérifications
 
-- [ ] Je peux lancer localement l'application avec `docker compose up`
-- [ ] Je peux voir l'UI dans mon navigateur à `localhost:3000`
+- [X] Je peux lancer localement l'application avec `docker compose up`
+- [X] Je peux voir l'UI dans mon navigateur à `localhost:3000`
 
 <details>
 <summary>Comparez votre travail à la solution avant de continuer. Y a-t-il des différences ? Votre approche est-elle meilleure ou pire ? Pourquoi ?</summary>

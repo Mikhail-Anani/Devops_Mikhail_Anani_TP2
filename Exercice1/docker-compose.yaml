@@ -1,0 +1,9 @@
+services:
+  guestbook:
+    build:
+      context: ..
+      dockerfile: Exercice1/dockerfile
+    image: guestbook:v0.1.0
+    ports:
+      - "3000:3000"
+
