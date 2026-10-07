@@ -1,0 +1,20 @@
+services:
+  node-express:
+    build: ./node-express
+    image: hotreload-node:dev
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./node-express:/app       
+      - /app/node_modules         
+
+  python-flask:
+    build: ./python-flask
+    image: hotreload-flask:dev
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_DEBUG=1             
+    volumes:
+      - ./python-flask:/app
