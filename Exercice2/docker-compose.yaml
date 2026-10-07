@@ -1,0 +1,17 @@
+services:
+  guestbook:
+    build:
+      context: ..
+      dockerfile: Exercice2/dockerfile
+    image: guestbook:v0.2.0
+    ports:
+      - "3000:3000"
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"

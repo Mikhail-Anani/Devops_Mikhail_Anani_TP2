@@ -210,7 +210,7 @@ Nous avons simplement besoin d'ajouter un nouveau service dans notre fichier doc
 
 ### Vérifications
 
-- [ ] L'application enregistre effectivement les messages
+- [x] L'application enregistre effectivement les messages
 - [ ] (Optionnel) Si vous exécutez `docker compose down`, vous ne perdez pas les données quand vous relancez l'application.
 
 ## 3. Ajouter de la persistance et du hot-reloading au guestbook
