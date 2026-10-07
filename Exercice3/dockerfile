@@ -1,0 +1,21 @@
+
+FROM golang:1.27 AS builder
+
+WORKDIR /app
+
+
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY main.go ./
+RUN go mod tidy && CGO_ENABLED=0 GOOS=linux go build -o guestbook .
+
+
+FROM scratch
+
+WORKDIR /app
+COPY --from=builder /app/guestbook ./guestbook
+COPY ./public ./public
+
+EXPOSE 3000
+CMD ["./guestbook"]

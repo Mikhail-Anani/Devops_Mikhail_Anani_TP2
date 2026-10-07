@@ -1,0 +1,14 @@
+root = "."
+tmp_dir = "/tmp/air"
+
+[build]
+  cmd = "go build -o /tmp/air/guestbook ."
+  bin = "/tmp/air/guestbook"
+  include_ext = ["go"]
+  exclude_dir = ["Exercice1", "Exercice2", "Exercice3", "public", "datasets", "examples", "cours", ".git"]
+  delay = 500
+  poll = true
+  poll_interval = 500
+
+[log]
+  time = true

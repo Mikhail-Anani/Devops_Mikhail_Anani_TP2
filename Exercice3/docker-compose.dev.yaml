@@ -1,0 +1,22 @@
+services:
+  guestbook:
+    build:
+      context: ..
+      dockerfile: Exercice3/dockerfile.dev
+    image: guestbook:dev
+    ports:
+      - "3000:3000"
+    environment:
+      - REDIS_HOST=redis
+    volumes:
+      - ..:/app         
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
