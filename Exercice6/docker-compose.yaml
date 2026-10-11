@@ -1,0 +1,19 @@
+services:
+  jupyter:
+    image: quay.io/jupyter/datascience-notebook:python-3.12
+    ports:
+      - "8888:8888"
+    user: root
+    environment:
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN:-monmotdepasse}
+      - CHOWN_EXTRA=/home/jovyan/.local,/home/jovyan/work
+      - CHOWN_EXTRA_OPTS=-R
+    volumes:
+      - jupyter_notebooks:/home/jovyan/work           # mes notebooks
+      - jupyter_data:/home/jovyan/.local              # paquets Python installés
+      - ../datasets:/home/jovyan/datasets:ro          # datasets du depot, lecture seule
+      - ../examples:/home/jovyan/examples:ro          # notebook de demo, lecture seule
+
+volumes:
+  jupyter_notebooks:
+  jupyter_data:
